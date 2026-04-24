@@ -72,7 +72,7 @@ public class EmployeeController {
      * @return
      */
     @GetMapping("/employee/compensation/{id}")
-    public Compensation readComp(@Pathvariable String id) {
+    public Compensation readComp(@PathVariable String id) {
         LOG.debug("Recieved request fro compensation fro employee with id [{}]", id);
 
         return employeeService.readComp(id);

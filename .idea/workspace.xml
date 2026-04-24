@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="solved typo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Compensation.java" afterDir="false" />
+    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="Completed Task 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/config/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/config/MongoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/ReportingStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/ReportingStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777039300700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed Task 2">
+      <option name="closed" value="true" />
+      <created>1777043948520</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1777043948520</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,6 +130,7 @@
     <MESSAGE value="in the middle of task 1" />
     <MESSAGE value="completed task 1" />
     <MESSAGE value="solved typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved typo" />
+    <MESSAGE value="Completed Task 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Task 2" />
   </component>
 </project>

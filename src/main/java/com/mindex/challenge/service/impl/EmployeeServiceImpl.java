@@ -1,6 +1,6 @@
 package com.mindex.challenge.service.impl;
 
-import com.mindex.challenge.dao.EmployeeRepository;
+import com.mindex.challenge.dao.*;
 import com.mindex.challenge.data.*;
 import com.mindex.challenge.service.EmployeeService;
 import org.slf4j.Logger;
@@ -18,7 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    @AutoWired
+    @Autowired
     private CompensationRepository compensationRepository;
 
     @Override
@@ -102,7 +102,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Compensation readComp(String id) {
-        Compensation comp = compensationRepository.findById(id);
+        Compensation comp = compensationRepository.findByEmpId(id);
         if (comp == null) {
             throw new RuntimeException("No compensation for employer with id: " + id);
         }
