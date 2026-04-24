@@ -1,6 +1,6 @@
 package com.mindex.challenge.config;
 
-import com.mindex.challenge.dao.EmployeeRepository;
+import com.mindex.challenge.dao.*;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import de.bwaldvogel.mongo.MongoServer;
@@ -12,7 +12,7 @@ import org.springframework.lang.NonNull;
 
 import java.net.InetSocketAddress;
 
-@EnableMongoRepositories(basePackageClasses = EmployeeRepository.class)
+@EnableMongoRepositories(basePackageClasses = {EmployeeRepository.class, CompensationRepository.class})
 @Configuration
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
@@ -31,5 +31,4 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
         return MongoClients.create(mongoConnectionString);
     }
 }
-
 

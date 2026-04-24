@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="created repository for code challenge">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/ReportingStructure.java" afterDir="false" />
+    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="completed all tasks as well as working tester file">
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Compensation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/config/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/config/MongoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/ReportingStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/ReportingStructure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,23 +24,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "amv2552"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/amv2552/mindex-code-challenge.git",
-    "accountId": "ec0439f1-6553-49b7-9da1-29c058ef6ab1"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+    &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amv2552&quot;
+    }
+    }</component>
+  <component name="GithubPullRequestsUISettings">{
+    &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/amv2552/mindex-code-challenge.git&quot;,
+    &quot;accountId&quot;: &quot;ec0439f1-6553-49b7-9da1-29c058ef6ab1&quot;
+    }
+    }</component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 7
+    }</component>
   <component name="ProjectId" id="3CmOnEX2mq66GtqOzx2XaNMd7Sd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,6 +57,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/avega/Documents/mindex-code-challenge",
@@ -81,11 +94,81 @@
       <option name="project" value="LOCAL" />
       <updated>1776987795714</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="in the middle of task 1">
+      <option name="closed" value="true" />
+      <created>1776990484655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776990484655</updated>
+    </task>
+    <task id="LOCAL-00004" summary="completed task 1">
+      <option name="closed" value="true" />
+      <created>1777038903332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777038903332</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completed task 1">
+      <option name="closed" value="true" />
+      <created>1777039228946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777039228946</updated>
+    </task>
+    <task id="LOCAL-00006" summary="solved typo">
+      <option name="closed" value="true" />
+      <created>1777039300700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777039300700</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Completed Task 2">
+      <option name="closed" value="true" />
+      <created>1777043948520</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1777043948520</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created a tester file">
+      <option name="closed" value="true" />
+      <created>1777052460712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777052460712</updated>
+    </task>
+    <task id="LOCAL-00009" summary="completed all tasks as well as working tester file">
+      <option name="closed" value="true" />
+      <created>1777055337917</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1777055337917</updated>
+    </task>
+    <task id="LOCAL-00010" summary="completed all tasks as well as working tester file">
+      <option name="closed" value="true" />
+      <created>1777055569177</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777055569177</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created repository for code challenge" />
-    <option name="LAST_COMMIT_MESSAGE" value="created repository for code challenge" />
+    <MESSAGE value="in the middle of task 1" />
+    <MESSAGE value="completed task 1" />
+    <MESSAGE value="solved typo" />
+    <MESSAGE value="Completed Task 2" />
+    <MESSAGE value="Created a tester file" />
+    <MESSAGE value="completed all tasks as well as working tester file" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed all tasks as well as working tester file" />
   </component>
 </project>
