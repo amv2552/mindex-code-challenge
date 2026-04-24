@@ -79,6 +79,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         if (directReports != null && !directReports.isEmpty()){
             for (Employee dReport : directReports){
+                if (dReport.getEmployeeId() != null && (dReport.getFirstName() == null || dReport.getFirstName().isEmpty())) {
+                    dReport = employeeRepository.findByEmployeeId(dReport.getEmployeeId());
+                }
                 count += 1 + calculateNumOfRep(dReport);
             }
         }
@@ -96,15 +99,15 @@ public class EmployeeServiceImpl implements EmployeeService {
             throw new RuntimeException("Salary cannot be negative");
         }
 
-        Compensation compensation = new Compensation(employee, salary, effectiveDate);
+        Compensation compensation = new Compensation(id, salary, effectiveDate);
         return compensationRepository.insert(compensation);
     }
 
     @Override
     public Compensation readComp(String id) {
-        Compensation comp = compensationRepository.findByEmpId(id);
+        Compensation comp = compensationRepository.findByEmployeeId(id);
         if (comp == null) {
-            throw new RuntimeException("No compensation for employer with id: " + id);
+            throw new RuntimeException("No compensation for employee with id: " + id);
         }
 
         return comp;
