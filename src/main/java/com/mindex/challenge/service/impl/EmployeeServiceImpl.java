@@ -58,7 +58,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         Employee employee = employeeRepository.findByEmployeeId(id);
         // emsures the employee exists
         if (employee == null) {
-            throe new RuntimeException("Invalid employeeID: " + id);
+            throw new RuntimeException("Invalid employeeID: " + id);
         }
         // calculates the reports and creates a new reporting structure
         int numberOfReports = calculateNumOfRep(employee);
