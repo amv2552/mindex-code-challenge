@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="Created a tester file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/dao/CompensationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Compensation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/data/Compensation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mindex/challenge/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mindex/challenge/ChallengeApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="6f6a28ba-4157-4582-bcdd-af016684ccec" name="Changes" comment="completed all tasks as well as working tester file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777052460712</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="completed all tasks as well as working tester file">
+      <option name="closed" value="true" />
+      <created>1777055337917</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1777055337917</updated>
+    </task>
+    <task id="LOCAL-00010" summary="completed all tasks as well as working tester file">
+      <option name="closed" value="true" />
+      <created>1777055569177</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777055569177</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +149,7 @@
     <MESSAGE value="solved typo" />
     <MESSAGE value="Completed Task 2" />
     <MESSAGE value="Created a tester file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a tester file" />
+    <MESSAGE value="completed all tasks as well as working tester file" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed all tasks as well as working tester file" />
   </component>
 </project>
