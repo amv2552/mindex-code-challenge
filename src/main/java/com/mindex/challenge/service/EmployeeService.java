@@ -1,7 +1,6 @@
 package com.mindex.challenge.service;
 
-import com.mindex.challenge.data.Employee;
-import com.mindex.challenge.data.ReportingStructure;
+import com.mindex.challenge.data.*;
 
 public interface EmployeeService {
     Employee create(Employee employee);
@@ -9,4 +8,8 @@ public interface EmployeeService {
     Employee update(Employee employee);
     // function for reporting structure
     ReportingStructure reportStruct(String id);
+    // creates the compensation for the employee with the given id
+    Compensation createComp(String id, int salary, String effectiveDate);
+    // reads the compensation for the given employee
+    Compensation readComp(String id);
 }

@@ -7,7 +7,9 @@ package com.mindex.challenge.data;
  * @author Alexis Vega
  */
 public class ReportingStructure{
+    // connects to the specific employee
     private Employee employee;
+    // an int of reports
     private int numberOfReports;
 
     public ReportingStructure(){

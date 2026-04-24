@@ -1,14 +1,14 @@
 package com.mindex.challenge.service.impl;
 
 import com.mindex.challenge.dao.EmployeeRepository;
-import com.mindex.challenge.data.Employee;
-import com.mindex.challenge.data.ReportingStructure;
+import com.mindex.challenge.data.*;
 import com.mindex.challenge.service.EmployeeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.UUID;
+import java.util.List;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -17,6 +17,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    @AutoWired
+    private CompensationRepository compensationRepository;
 
     @Override
     public Employee create(Employee employee) {
@@ -74,13 +77,37 @@ public class EmployeeServiceImpl implements EmployeeService {
         int count = 0;
         List<Employee> directReports = employee.getDirectReports();
 
-        if (directReports != null && !directReports.isEmpty){
+        if (directReports != null && !directReports.isEmpty()){
             for (Employee dReport : directReports){
                 count += 1 + calculateNumOfRep(dReport);
             }
         }
 
         return count;
+    }
+
+    @Override
+    public Compensation createComp(String id, int salary, String effectiveDate) {
+        Employee employee = employeeRepository.findByEmployeeId(id);
+        if (employee == null) {
+            throw new RuntimeException("Invalid employee id: " + id);
+        }
+        if (salary < 0) {
+            throw new RuntimeException("Salary cannot be negative");
+        }
+
+        Compensation compensation = new Compensation(employee, salary, effectiveDate);
+        return compensationRepository.insert(compensation);
+    }
+
+    @Override
+    public Compensation readComp(String id) {
+        Compensation comp = compensationRepository.findById(id);
+        if (comp == null) {
+            throw new RuntimeException("No compensation for employer with id: " + id);
+        }
+
+        return comp;
     }
 
 }

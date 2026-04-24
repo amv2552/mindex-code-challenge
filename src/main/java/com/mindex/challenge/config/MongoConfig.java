@@ -12,7 +12,7 @@ import org.springframework.lang.NonNull;
 
 import java.net.InetSocketAddress;
 
-@EnableMongoRepositories(basePackageClasses = EmployeeRepository.class)
+@EnableMongoRepositories(basePackageClasses = {EmployeeRepository.class, CompensationRepository.class})
 @Configuration
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
