@@ -2,6 +2,7 @@ package com.mindex.challenge.service.impl;
 
 import com.mindex.challenge.dao.EmployeeRepository;
 import com.mindex.challenge.data.Employee;
+import com.mindex.challenge.data.ReportingStructure;
 import com.mindex.challenge.service.EmployeeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,4 +47,40 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return employeeRepository.save(employee);
     }
+
+    /**
+     * Uses a helper function to calculate the number of reports and creates a new ReportingStructure
+     * @param id  the ID
+     * @return    new ReportingStructure
+     */
+    @Override
+    public ReportingStructure reportStruct(String id){
+        Employee employee = employeeRepository.findByEmployeeId(id);
+        // emsures the employee exists
+        if (employee == null) {
+            throe new RuntimeException("Invalid employeeID: " + id);
+        }
+        // calculates the reports and creates a new reporting structure
+        int numberOfReports = calculateNumOfRep(employee);
+        return new ReportingStructure(employee, numberOfReports);
+    }
+
+    /**
+     * Recursively goes through the direct reports of the given employee to get all who report to them
+     * @param employee  Whose reports we're looking for
+     * @return          number of reports
+     */
+    private int calculateNumOfRep(Employee employee) {
+        int count = 0;
+        List<Employee> directReports = employee.getDirectReports();
+
+        if (directReports != null && !directReports.isEmpty){
+            for (Employee dReport : directReports){
+                count += 1 + calculateNumOfRep(dReport);
+            }
+        }
+
+        return count;
+    }
+
 }
