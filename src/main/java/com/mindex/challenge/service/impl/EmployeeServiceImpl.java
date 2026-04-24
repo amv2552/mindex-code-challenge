@@ -46,4 +46,31 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return employeeRepository.save(employee);
     }
+
+    /**
+     * 
+     * @param id
+     * @return
+     */
+    @Override
+    public int reportStruct(String id){
+        Employee employee = employeeRepository.findByEmployeeId(id);
+        int count = 0;
+        // ensures no nonexistent employees are searched for
+        if (employee == null) {
+            throw new RuntimeException("Invalid employeeID: " + id);
+        }
+
+        List<Employee> reports = employee.getDirectReports();
+        // will count the number of employees who report to employee entered
+        // and search who may report to them
+        if (reports != null){
+            count += 1;
+            for (int i=0; i<reports.size(); i++){
+                reportStruct(reports.get(i));
+            }
+        }
+
+        return count;
+    }
 }
