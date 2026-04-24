@@ -79,6 +79,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         if (directReports != null && !directReports.isEmpty()){
             for (Employee dReport : directReports){
+                // ensures to get all employees and theri direct reports as well
                 if (dReport.getEmployeeId() != null && (dReport.getFirstName() == null || dReport.getFirstName().isEmpty())) {
                     dReport = employeeRepository.findByEmployeeId(dReport.getEmployeeId());
                 }
